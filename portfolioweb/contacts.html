@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head><style> .navbar ul{
+     display: flex;
+     flex-direction: row;
+     align-items: flex-end;
+     list-style: none;
+     opacity: 1;
+     padding: 10px;
+     overflow: auto;
+     justify-content: baseline;
+     background-color: whitesmoke;     }
+.link1{
+     text-decoration: none;
+     padding: 15px;
+     font-size: 24px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color:rgb(0, 99, 185);
+     cursor: grab;
+
+}
+.link1:hover{
+     background-color:aliceblue;
+     color: rgb(4, 74, 136);
+     border-radius: 5px;}
+     #contacts{
+               background-color: rgb(8, 226, 99);
+          color: aliceblue;
+          }body {  
+
+background:skyblue; 
+
+}
+
+
+form {  
+
+ width: 30%;  
+
+ margin: 60px auto;  
+
+ background: #efefef;  
+ padding: 60px 120px 80px 120px;  
+
+ text-align: center;  
+
+ -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1); 
+
+ box-shadow: 2px 2px 3px rgba(0,0,0,0.1); 
+
+}
+label {  
+
+display: block;  
+
+position: relative;  
+
+margin: 40px 0px; 
+box-shadow:2px 2px 2px 2px black;
+border-bottom:solid 2px navy;
+
+}
+
+
+.label-txt {  
+
+ position: absolute;  
+
+ top: -1.6em;  
+
+ padding: 10px;  
+
+ font-family: sans-serif;  
+
+ font-size: .8em;  
+
+ letter-spacing: 1px;  
+
+ color: rgb(120,120,120);  
+
+ transition: ease .3s; 
+
+}
+
+.input {  
+
+ width: 100%;  
+
+ padding: 10px;  
+
+ background: transparent;  
+
+ border: none;  
+
+ outline: none; 
+
+}
+.line-box {  
+
+position: relative;  
+
+width: 100%;  
+
+height: 2px;  
+
+background: #BCBCBC; 
+
+}
+
+.line {  
+ position: absolute;  
+
+ width: 0%;  
+
+ height: 2px;  
+
+ top: 0px;  
+
+ left: 50%;  
+
+ transform: translateX(-50%);  
+
+ background: #8BC34A;  
+
+ transition: ease .6s; 
+
+}  
+
+
+.input:focus + .line-box .line {  
+
+ width: 100%; 
+
+}
+
+
+.label-active {  
+
+ top: -3em; 
+
+}
+
+
+button {  
+
+ display: inline-block; 
+
+ padding: 24px;  
+
+ background: rgb(220,220,220);  
+
+ font-weight: bold;  
+
+ color: rgb(120,120,120);  
+
+ border: none;  outline: none;  
+
+ border-radius: 3px;  
+
+ cursor: pointer;  
+
+ transition: ease .3s; 
+ margin-right:3rem;
+
+}  
+
+
+button:hover {  
+
+ background: #8BC34A;  
+
+ color: #ffffff; 
+
+}
+.input-group{
+display:flex;
+
+}
+input.gender{
+padding-right:20px;}
+
+
+
+     </style>
+<body><nav class="navbar">
+     <ul>
+          <li><a class="link1" id="one" aria-current="page" href="/home">home</a></li>
+          <li><a class="link1" id="about" href="/about">about</a></li>
+          <li><a class="link1" id="contacts" href="/contacts">contact me</a></li>
+     </ul>
+</nav>
+<div>   
+
+     <form>    
+
+       <h1 class="text-warning text-center pt-5">Contact Us</h1>  
+
+       
+
+       <label>     
+
+         <input type="text" class="input" name="email" placeholder="EMAIL"/>                   <div class="line-box">             
+
+         <div class="line"><input type="text" class="input" name="email" placeholder="EMAIL"/></div>        
+
+         </div>    
+
+       </label>
+
+       
+
+       <label>     
+
+         <input 
+
+                type="text" 
+
+                class="input" 
+
+                name="username"        
+
+                placeholder="USERNAME"/>        
+
+         <div class="line-box">         
+
+           <div class="line"></div>        
+
+         </div>    
+
+       </label>     
+
+        <label>     
+
+         <input 
+
+                type="text" 
+
+                class="input" 
+
+                name="name"        
+
+                placeholder="NAME"/>        
+
+         <div class="line-box">         
+
+           <div class="line"></div>        
+
+         </div>    
+
+       </label>     
+
+       <label>     
+
+         <input 
+
+                type="password" 
+
+                class="input" 
+
+                name="password" 
+
+                placeholder="PASSWORD"/>        
+
+         <div class="line-box">          
+
+           <div class="line"></div>        
+
+         </div>    
+
+       </label>     
+
+       
+
+       <label>     
+
+         <input 
+
+                type="password" 
+
+                class="input" 
+
+                name="confirm" 
+
+                placeholder="CONFIRM PASSWORD"/>      
+
+         <div class="line-box">        
+
+           <div class="line"></div>      
+
+         </div>    
+
+       </label>    
+         
+
+       
+       <button type="submit">submit</button> 
+          <button class="GFG" 
+onclick="window.location.href = 'https://ide.geeksforgeeks.org';">
+   Visit Site
+</button>
+
+     </form> 
+
+ </div> 
+     
+</body>
+</html>
